@@ -1,0 +1,11 @@
+{
+    "languages": [
+        {
+            "name": "Spanish",
+            "sentences_deck": "Spanish::Sentences",
+            "sentences_note_type": "Basic (and reversed card)",
+            "misc_deck": "Spanish::Misc",
+            "misc_note_type": "Basic"
+        }
+    ]
+}

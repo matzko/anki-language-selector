@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Language Selector Config",
+    "type": "object",
+    "properties": {
+        "languages": {
+            "type": "array",
+            "description": "One entry per language you are learning.",
+            "items": {
+                "type": "object",
+                "required": ["name", "sentences_deck", "sentences_note_type", "misc_deck", "misc_note_type"],
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Display name shown in the selector window."
+                    },
+                    "sentences_deck": {
+                        "type": "string",
+                        "description": "Full deck name for sentence cards (e.g. 'Spanish::Sentences')."
+                    },
+                    "sentences_note_type": {
+                        "type": "string",
+                        "description": "Note type name for sentence cards (must match exactly)."
+                    },
+                    "misc_deck": {
+                        "type": "string",
+                        "description": "Full deck name for miscellaneous cards."
+                    },
+                    "misc_note_type": {
+                        "type": "string",
+                        "description": "Note type name for miscellaneous cards (must match exactly)."
+                    }
+                }
+            }
+        }
+    }
+}
